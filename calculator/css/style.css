@@ -1,0 +1,71 @@
+.calculator {
+  width: 330px;
+  padding: 15px;
+  background-color: black;
+  border-radius: 10px;
+}
+.calculator .resultDisplay {
+  width: 100%;
+  height: 90px;
+  margin: auto;
+  background-color: gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.calculator .resultDisplay #operatorDisplay {
+  width: 20px;
+  height: 20px;
+  background-color: #FF9500;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 20px;
+  margin: 6px 15px 4px auto;
+  font-size: 14px;
+  user-select: none;
+  visibility: hidden;
+}
+.calculator .resultDisplay #resultNumDisplay {
+  height: 50px;
+  padding-right: 15px;
+  text-align: right;
+  line-height: 50px;
+  font-size: 25px;
+  color: white;
+}
+.calculator .calBtns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 12px;
+  margin-top: 15px;
+  user-select: none;
+}
+.calculator .calBtns .calBtn {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+  border: none;
+}
+.calculator .calBtns .calBtn:active {
+  opacity: 0.7;
+}
+.calculator .calBtns .bigSizeBtn {
+  width: 140px;
+  border-radius: 65px;
+}
+.calculator .calBtns .btnColor1 {
+  background-color: #A6A6A6;
+  color: black;
+}
+.calculator .calBtns .btnColor2 {
+  background-color: #FF9500;
+  color: white;
+}
+.calculator .calBtns .btnColor3 {
+  background-color: #333333;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
