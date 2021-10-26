@@ -10,18 +10,15 @@ $('.btnClear').click(function () {
 })
 //演算子ボタンが押された場合の動作
 $('.btnOperator').click(function () {
-    if(firstCheck == true){
+    if (firstCheck == true) {
         operator = $(this).val();
         $('#operatorDisplay').css('visibility', 'visible');
         $('#operatorDisplay').html(operator);
         firstNum = $('#resultNumDisplay').html();
-    }else{
-        operator = $(this).val();
-        $('#operatorDisplay').css('visibility', 'visible');
-        $('#operatorDisplay').html(operator);
+    } else {
         firstNum = Number(firstNum);
         nowNum = $('#resultNumDisplay').html();
-        nowNum =  Number(nowNum);
+        nowNum = Number(nowNum);
         switch (operator) {
             case '÷':
                 firstNum = firstNum / nowNum;
@@ -40,6 +37,9 @@ $('.btnOperator').click(function () {
                 break;
         }
         $('#resultNumDisplay').html(firstNum);
+        operator = $(this).val();
+        $('#operatorDisplay').css('visibility', 'visible');
+        $('#operatorDisplay').html(operator);
     }
     operatorCheck = true;
     firstCheck = false;
@@ -68,7 +68,7 @@ $('.btnPoint').click(function () {
 })
 //イコールボタンが押された場合の動作
 $('.btnOutput').click(function () {
-    if(operatorCheck == false){
+    if (operatorCheck == false) {
         firstNum = Number(firstNum);
         nowNum = $('#resultNumDisplay').html();
         nowNum = Number(nowNum);
@@ -92,7 +92,7 @@ $('.btnOutput').click(function () {
         $('#resultNumDisplay').html(result);
         $('#operatorDisplay').html('');
         $('#operatorDisplay').css('visibility', 'hidden');
-    }else{
+    } else {
         nowNum = $('#resultNumDisplay').html();
         $('#resultNumDisplay').html(nowNum);
         $('#operatorDisplay').html('');
